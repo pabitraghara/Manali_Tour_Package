@@ -1,0 +1,242 @@
+.carousel {
+  height: 400px;
+  position: relative;
+}
+.carousel-item img {
+  height: 400px;
+}
+.queary-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -75px;
+  z-index: 10;
+  position: relative;
+  /* position: sticky; */
+  /* top: 70px; */
+}
+.text-overlay {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.text-overlay h2 {
+  font-size: 60px;
+}
+.tour-packages {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 30px;
+}
+.tour-box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.packages-avalibility {
+  height: 110px;
+  width: 300px;
+  background-color: white;
+  border-radius: 10px;
+  color: gray;
+}
+.packages-avalibility h5 {
+  font-size: 17px;
+}
+.packages-avalibility {
+  padding: 10px 20px;
+}
+.packages-price {
+  display: flex;
+  justify-content: space-evenly;
+}
+.price-arrow {
+  border: 2px solid red;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: red;
+  font-size: 25px;
+}
+.home-container {
+  background: linear-gradient(to right, #f9ce34, #ee2a7b, #6228d7);
+  height: 150px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px;
+  border-radius: 10px;
+}
+.queary-number {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.queary-input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.queary-box {
+  width: 200px;
+  border-bottom: 2px solid rgb(62, 60, 60);
+}
+.queary-box input {
+  width: 200px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.queary-box input::placeholder {
+  color: white;
+}
+#months {
+  padding: 5px 10px;
+  border-radius: 3px;
+  background-color: transparent;
+  outline: none;
+  color: white;
+  cursor: pointer;
+}
+#months option {
+  color: black;
+}
+.queary-btn {
+  background-color: #ea2330;
+  cursor: pointer;
+  padding: 7px 30px;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 20px;
+  border-radius: 5px;
+}
+.queary-for-tour {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.queary-for-tour h3 {
+  color: #fff;
+  text-align: center;
+}
+.queary-for-tour i {
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  .queary-container {
+    margin-top: -150px;
+  }
+  .home-container {
+    height: 100%;
+    width: 90%;
+    flex-direction: column;
+  }
+  .queary-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .queary-box {
+    width: 300px;
+  }
+  .queary-box input {
+    width: 300px;
+  }
+  .queary-for-tour h3 {
+    display: none;
+  }
+  .queary-for-tour i {
+    font-size: 40px;
+    background-color: white;
+    border-radius: 5px;
+    color: red;
+    text-align: center;
+  }
+  .packages-avalibility {
+    display: none;
+  }
+  .text-overlay {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .text-overlay h2 {
+    font-size: 30px;
+  }
+  .tour-packages {
+    gap: 10px;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 1300px) {
+  .queary-container {
+    margin-top: -120px;
+  }
+  .home-container {
+    height: 100%;
+    width: 90%;
+    flex-direction: column;
+  }
+  .queary-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .queary-for-tour h3 {
+    display: none;
+  }
+  .queary-for-tour i {
+    font-size: 40px;
+  }
+  .packages-avalibility {
+    display: none;
+  }
+  .text-overlay {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .text-overlay h2 {
+    font-size: 30px;
+  }
+  .tour-packages {
+    gap: 10px;
+  }
+  .packages-avalibility {
+    display: block;
+  }
+}

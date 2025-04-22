@@ -1,0 +1,139 @@
+.navbar-section {
+  position: sticky;
+  top: 0;
+  z-index: 11;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 80px;
+  background-color: #ece9e9;
+}
+.nav-bar img {
+  height: 70px;
+  width: 70px;
+}
+.nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.nav-menu li {
+  list-style: none;
+}
+.nav-menu li a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  padding: 10px;
+  cursor: pointer;
+  &:hover {
+    background-color: gray;
+    border-radius: 5px;
+    color: white;
+  }
+}
+.login-btn {
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #ea2330;
+}
+.login-btn .anchor {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+.menu {
+  display: none;
+  font-size: 35px;
+}
+.xmark {
+  display: none;
+}
+.login-btn-btn {
+  display: none;
+  padding: 7px 15px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #ea2330;
+}
+.login-btn1 .anchor1 {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+@media screen and (max-width: 670px) {
+  .navbar-section {
+    height: 100%;
+    justify-content: space-between;
+    padding: 0px 10px;
+  }
+  .nav-bar img {
+    height: 50px;
+    width: 50px;
+  }
+  .nav-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    background-color: #456990;
+    height: 100%;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 0px;
+    z-index: 100;
+  }
+  .nav-menu.open {
+    display: flex;
+  }
+  .menu {
+    display: block;
+    font-size: 35px;
+  }
+  .nav-menu li a {
+    color: white;
+    font-size: 23px;
+  }
+  .xmark {
+    display: flex;
+    font-size: 30px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
+  .login-btn {
+    display: none;
+  }
+  .login-btn-btn {
+    position: absolute;
+    bottom: 2%;
+    left: 25%;
+    display: flex;
+    padding: 7px 50px;
+    background-color: blue;
+  }
+  .login-btn-btn .anchor1 {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 671px) and (max-width: 1024px) {
+  .navbar-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 70px;
+  }
+  .nav-menu {
+    padding-top: 15px;
+  }
+}

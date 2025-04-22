@@ -1,0 +1,139 @@
+.header-container{
+    height: 80px;
+    background-color: #e78ca7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 0px 15px;
+}
+.content-left{
+    display: flex;
+    gap: 10px;
+}
+.header-box{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    font-size: 17.5px;
+}
+.content-right{
+    display: flex;
+    gap: 20px;
+}
+.content-lists{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.content-lists i{
+    font-size: 25px;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    &:hover{
+        background-color: rgb(167, 160, 160);
+        cursor: pointer;
+    }
+}
+.content-lists i:first-child{
+    color: #25D366;
+}
+.content-lists i:nth-child(2){
+    color: #F56040;
+}
+.content-lists i:nth-child(3){
+    color: #1877F2;
+}
+.content-lists i:nth-child(4){
+    color: #FF0000;
+}
+
+.content-btn{
+    height: 80px;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    color: white;
+    font-weight: 600;
+    font-size: 17px;
+    cursor: pointer;
+}
+.vartical-line{
+    height: 30px;
+    width: 1px;
+    background-color: black;
+   
+}
+@media screen and (max-width:600px) {
+    .header-container{
+        height: 100%;
+        padding: 10px;
+        gap: 20px;
+        flex-direction: column;
+    }
+    .content-left{
+        gap: 10px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .header-box{
+        display: flex;
+        align-items: center;
+        gap: 3px;
+        font-size: 17.5px;
+    }
+    .header-box i{
+        display: none;
+    }
+    .content-lists{
+        display: none;
+    }
+    .content-btn{
+        height: 50px;
+        border-radius: 7px;
+    }
+    .vartical-line{
+        display: none;
+       
+    }
+}
+
+@media screen and (min-width:601px) and (max-width:1024px) {
+    .header-container{
+        height: 100%;
+        padding: 10px;
+        gap: 20px;
+        flex-direction: column;
+    }
+    .content-left{
+        gap: 10px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .header-box{
+        display: flex;
+        align-items: center;
+        gap: 3px;
+        font-size: 17.5px;
+    }
+    .header-box i{
+        display: none;
+    }
+    .content-lists{
+        display: none;
+    }
+    .content-btn{
+        height: 50px;
+        border-radius: 7px;
+    }
+    .vartical-line{
+        display: none;
+       
+    }
+}
