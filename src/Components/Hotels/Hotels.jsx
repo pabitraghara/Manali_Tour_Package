@@ -2,8 +2,8 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "./Testimonials.css";
-import testimonials from "./Testimonials";
+import "./Hotels.css";
+import hotels from "./hotelsData";
 
 
 const Hotels = () => {
@@ -35,7 +35,7 @@ const Hotels = () => {
   return (
     <section id="Hotels" className="testimonials">
       <Slider {...settings}>
-        {testimonials.map((item, index) => (
+        {hotels.map((item, index) => (
           <div key={index} className="hotel-card">
             <div>
               <img src={item.image} alt={item.name || "Hotel"} />
