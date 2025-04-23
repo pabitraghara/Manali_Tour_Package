@@ -158,10 +158,10 @@
     gap: 20px;
   }
   .queary-box {
-    width: 300px;
+    width: 100%;
   }
   .queary-box input {
-    width: 300px;
+    width: 100%;
   }
   .queary-for-tour h3 {
     display: none;
